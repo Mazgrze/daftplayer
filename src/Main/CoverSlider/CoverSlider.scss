@@ -1,0 +1,58 @@
+@import '../../theme/colors.scss';
+
+.slider {
+    position: relative;
+    margin-top: 2rem;
+    .tns-item {
+        height: 200px;
+
+        // max-width: 200px;
+        transform: scale(0.6);
+        transition: transform 0.3s ease;
+    }
+
+    .tns-item.tns-slide-active {
+        transform: none;
+        // height: 320px;
+        // width: 320px;
+    }
+    &__cover {
+        height: 100%;
+        width: 100%;
+        max-width: 200px;
+        max-height: 200px;
+        margin:auto;
+        display: block;
+        object-fit: cover;
+    }
+    &__circle {
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: 3px solid $green;
+        background: $main;
+        width: 4rem;
+        height: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    &__logo {
+        animation: spin 5s infinite linear;
+
+    }
+}
+
+@keyframes spin{
+    from {
+        transform: rotate(0deg);
+
+      }
+      to {
+        transform: rotate(360deg);
+      }
+}

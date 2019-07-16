@@ -1,41 +1,52 @@
 {
-  "name": "daftplayer",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "airbnb",
-    "rules": {
-      "no-undef": "off"
+    "name": "daftplayer",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-scripts": "3.0.1",
+        "tiny-slider-react": "^0.4.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "airbnb",
+        "parser": "babel-eslint",
+        "rules": {
+            "no-undef": "off",
+            "linebreak-style": "off",
+            "react/prop-types": "off",
+            "react-hooks/exhaustive-deps": "off",
+            "react/destructuring-assignment": [
+                "always",
+                {
+                    "ignoreClassFields": true
+                }
+            ]
+        }
+    },
+    "browserslist": {
+        "production": [
+            "since 2018",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "eslint-config-airbnb": "17.1.1",
+        "eslint-plugin-import": "2.18.0",
+        "eslint-plugin-jsx-a11y": "6.2.3",
+        "eslint-plugin-react": "7.14.2",
+        "node-sass": "^4.12.0"
     }
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "eslint-config-airbnb": "17.1.1",
-    "eslint-plugin-import": "2.18.0",
-    "eslint-plugin-jsx-a11y": "6.2.3",
-    "eslint-plugin-react": "7.14.2",
-    "node-sass": "^4.12.0"
-  }
 }

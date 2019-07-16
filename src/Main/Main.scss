@@ -1,0 +1,22 @@
+@import '../theme/colors.scss';
+
+.main {
+    height: calc(100% - 3rem);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    z-index: 10;
+    position: relative;
+    flex-grow: 1;
+
+    &__title {
+        color: $green;
+        font-size: 2rem;
+    }
+
+    &__artist {
+        text-transform: uppercase;
+        color: $gray;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,49 @@
+@import '../theme/colors.scss';
+
+.next {
+    padding: 1rem 2rem;
+    display: flex;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    color: $main;
+    text-align: left;
+    z-index: 10;
+
+    &__playlist {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    &__content {
+        margin-left: 1rem;
+        flex-grow: 1;
+    }
+
+    &__prop {
+        font-size: 1rem;
+        color: $gray;
+    }
+
+    &__info {
+        display: flex;
+        font-size: 1.5rem;
+        color: $main;
+    }
+
+    &__dots {
+        flex-grow: 1;
+        margin: 0.2rem;
+        background-image: linear-gradient(to right, $gray 12%, rgba(255, 255, 255, 0) 0%);
+        background-position: bottom;
+        background-size: 16px 2px;
+        background-repeat: repeat-x;
+
+    }
+
+    &__duration {
+        color: $gray;
+    }
+}

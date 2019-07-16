@@ -1,0 +1,108 @@
+@import '../theme/colors.scss';
+
+.playlist {
+    background-color: white;
+    color: $main;
+    padding: 2rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: calc(100% - 8rem);
+    z-index: 20;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    top: 101%;
+    transition: top 0.3s ease;
+
+    &--active {
+        top: 6rem;
+    }
+
+    &__list {
+        overflow: auto;
+        padding-bottom: 90px;
+        list-style: none;
+        counter-reset: li;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__li {
+        counter-increment: li;
+        position: relative;
+
+        &:before {
+            content: counter(li)".";
+            color: $gray;
+            position: absolute;
+            display: block;
+            top: 0;
+            right: 103%;
+            line-height: 2rem;
+        }
+    }
+
+    &__track {
+        display: flex;
+        margin: 1rem;
+        cursor: pointer;
+        color: $main;
+        line-height: 2rem;
+
+    }
+
+    &__title {
+        font-size: 1.5rem;
+    }
+
+    &__dots {
+        flex-grow: 1;
+        margin: 0.2rem;
+        background-image: linear-gradient(to right, $gray 12%, rgba(255, 255, 255, 0) 0%);
+        background-position: bottom;
+        background-size: 16px 2px;
+        background-repeat: repeat-x;
+    }
+
+    &__duration {
+        font-size: 1.5rem;
+        color: $gray;
+    }
+
+    &__action {
+        z-index: 10;
+        box-shadow: 0px -40px 90px 60px white;
+    }
+
+    &__shuffle {
+        color: white;
+        font-weight: bold;
+        width: 90%;
+        cursor: pointer;
+        background-color: $green;
+        border-radius: 2rem;
+        padding: 1rem;
+        margin: auto;
+        display: inline-block;
+
+        &:active {
+            transform: scale(0.9);
+        }
+    }
+
+    &__more {
+        cursor: pointer;
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem auto;
+    }
+
+    &__close {
+        display: block;
+        margin: auto;
+    }
+}

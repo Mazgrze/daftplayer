@@ -1,0 +1,77 @@
+@import '../../theme/colors.scss';
+
+.progress {
+    display: flex;
+    padding: 1rem 2rem;
+    color: $gray;
+
+    &__bar {
+        flex-grow: 1;
+        padding: 0 1rem;
+    }
+
+    &__input {
+        width: 100%;
+        line-height: 2rem;
+        vertical-align: middle;
+        cursor: pointer;
+
+
+        /*Chrome*/
+        @media screen and (-webkit-min-device-pixel-ratio:0) {
+            & {
+                overflow: hidden;
+                // width: 80px;
+                -webkit-appearance: none;
+                background-color: transparent;
+                position: relative;
+
+                &:after {
+                    content: "";
+                    display: block;
+                    border-bottom: 1px solid black;
+                    position: absolute;
+                    left: -5px;
+                    right: -5px;
+                    top: 50%;
+                    z-index: -1;
+
+                }
+            }
+
+            &::-webkit-slider-runnable-track {
+                height: 6px;
+                -webkit-appearance: none;
+                color: $dark-gray;
+                margin-top: -1px;
+                position: relative;
+
+            }
+
+            &::-webkit-slider-thumb {
+                width: 2px;
+                -webkit-appearance: none;
+                height: 15px;
+                cursor: ew-resize;
+                background: transparent;
+                box-shadow: -280px 0 0 280px $dark-gray;
+            }
+
+        }
+    }
+
+    &__play-button {
+        width: 8rem;
+        height: 8rem;
+        object-fit: cover;
+        object-position: center center;
+        position: relative;
+    }
+
+    &__play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+}

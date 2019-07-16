@@ -1,0 +1,45 @@
+@import '../theme/colors.scss';
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 10;
+    position: relative;
+
+    &__icon {
+        height: 1.5rem;
+        width: 1rem;
+        cursor: pointer;
+
+        &--play {
+            height: 3rem;
+            width: 3rem;
+            transform: scale(1.2);
+        }
+    }
+
+    &__info {
+        &--track {
+            flex-grow: 1;
+            text-align: left;
+            padding-left: 2rem;
+        }
+    }
+
+    &__prop {
+        color: $gray;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    &__album {
+        font-size: 1.5rem;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        color: $green;
+    }
+}
