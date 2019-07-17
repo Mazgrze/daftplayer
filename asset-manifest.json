@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/daftplayer/static/css/main.157141d8.chunk.css",
+    "main.css": "/daftplayer/static/css/main.8a8bc3e4.chunk.css",
     "main.js": "/daftplayer/static/js/main.58c893d4.chunk.js",
     "main.js.map": "/daftplayer/static/js/main.58c893d4.chunk.js.map",
     "runtime~main.js": "/daftplayer/static/js/runtime~main.27ee17f3.js",
@@ -9,10 +9,10 @@
     "static/js/2.49781ed9.chunk.js": "/daftplayer/static/js/2.49781ed9.chunk.js",
     "static/js/2.49781ed9.chunk.js.map": "/daftplayer/static/js/2.49781ed9.chunk.js.map",
     "index.html": "/daftplayer/index.html",
-    "precache-manifest.c7e21373ef29f77895aeafacefffe25a.js": "/daftplayer/precache-manifest.c7e21373ef29f77895aeafacefffe25a.js",
+    "precache-manifest.24f6a911e734eaa22821cc4721da4c3a.js": "/daftplayer/precache-manifest.24f6a911e734eaa22821cc4721da4c3a.js",
     "service-worker.js": "/daftplayer/service-worker.js",
     "static/css/2.62bb572b.chunk.css.map": "/daftplayer/static/css/2.62bb572b.chunk.css.map",
-    "static/css/main.157141d8.chunk.css.map": "/daftplayer/static/css/main.157141d8.chunk.css.map",
+    "static/css/main.8a8bc3e4.chunk.css.map": "/daftplayer/static/css/main.8a8bc3e4.chunk.css.map",
     "static/media/Play_active.png": "/daftplayer/static/media/Play_active.d522478d.png",
     "static/media/index.scss": "/daftplayer/static/media/SourceSansPro-Regular.ffffa8b4.woff2",
     "static/media/back_ico.svg": "/daftplayer/static/media/back_ico.0d7e4b76.svg",

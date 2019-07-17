@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c48042b283d3c12aac025d3e322dc40d",
+    "revision": "5ad628b0a838335b37070cc5d78ee871",
     "url": "/daftplayer/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/daftplayer/static/css/2.62bb572b.chunk.css"
   },
   {
-    "revision": "772d503db35980742c3e",
-    "url": "/daftplayer/static/css/main.157141d8.chunk.css"
+    "revision": "d72cc1d729a004b28a05",
+    "url": "/daftplayer/static/css/main.8a8bc3e4.chunk.css"
   },
   {
     "revision": "003ddeda6cce5b5294b5",
     "url": "/daftplayer/static/js/2.49781ed9.chunk.js"
   },
   {
-    "revision": "772d503db35980742c3e",
+    "revision": "d72cc1d729a004b28a05",
     "url": "/daftplayer/static/js/main.58c893d4.chunk.js"
   },
   {

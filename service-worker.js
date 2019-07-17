@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/daftplayer/precache-manifest.c7e21373ef29f77895aeafacefffe25a.js"
+  "/daftplayer/precache-manifest.24f6a911e734eaa22821cc4721da4c3a.js"
 );
 
 self.addEventListener('message', (event) => {
