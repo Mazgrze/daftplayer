@@ -8,7 +8,7 @@ import playInactive from './Play_inactive.png';
 export default function Head({
   track, showInfo, goBack, togglePlay, isPlayed, isPlaylist,
 }) {
-  const { artist, album, title } = track;
+  const { artist, album, title } = track || {};
   return (
     <div className="head">
       <button type="button" onClick={goBack}>

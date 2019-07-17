@@ -2,7 +2,7 @@ import React from 'react';
 import './MoreInfo.scss';
 
 export default function MoreInfo({ track, isActive }) {
-  const { title, artist, coverFile } = track;
+  const { title, artist, coverFile } = track || [];
   return (
     <div className={`more ${isActive ? 'more--active' : ''}`}>
       <img className="more__cover" src={`${process.env.PUBLIC_URL}/${coverFile}`} alt="" />

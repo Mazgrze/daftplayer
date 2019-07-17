@@ -22,7 +22,6 @@ it('renders slider with error', () => {
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
-  // eslint-disable-next-line react/jsx-filename-extension
   ReactDOM.render(<CoverSlider />, div);
   ReactDOM.unmountComponentAtNode(div);
 });

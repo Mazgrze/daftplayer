@@ -16,7 +16,7 @@ export default function Playlist({
     } catch (err) {}
   }
 
-  const list = tracks.map((song, index) => (
+  const list = tracks && tracks.length ? tracks.map((song, index) => (
     <li className="playlist__li" data-track-id={index} key={song.id}>
       <div className="playlist__track">
         <div className="playlist__title">{song.title}</div>
@@ -24,7 +24,8 @@ export default function Playlist({
         <div className="playlist__duration">{formatDuration(song.duration)}</div>
       </div>
     </li>
-  ));
+  ))
+    : [];
 
   return (
     <div className={`playlist ${isActive ? 'playlist--active' : ''}`}>
