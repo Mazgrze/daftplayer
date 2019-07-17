@@ -1,9 +1,11 @@
-s# Daftplayer
+# Daftplayer
 
 This is recruitment task made for Daftcode made using:
 * react.js,
 * sass lang,
 * tiny-slider
+
+demo is available on https://mazgrze.github.io/daftplayer
 
 ## Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
