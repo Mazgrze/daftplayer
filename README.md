@@ -1,6 +1,6 @@
 # Daftplayer
 
-This is recruitment task made for Daftcode made using:
+This is mock of spotify-like player made using:
 * react.js,
 * sass lang,
 * tiny-slider
